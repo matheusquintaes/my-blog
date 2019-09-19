@@ -8,48 +8,45 @@ export const PostItemLink = styled(Link)`
   &:hover {
     color: #1fa1f2;
   }
+  margin-bottom:4rem;
 `
 
 export const PostItemWrapper = styled.section`
-  align-items: center;
-  border-bottom: 1px solid #38444d;
-  display: flex;
-  padding: 2rem 3rem;
-  width: 100%;
+
 `
 
-export const PostItemTag = styled.div`
-  align-items: center;
-  background: ${props => props.background};
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  font-size: 1.3rem;
-  font-weight: 700;
-  justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
+export const PostItemCategory = styled.div`
+  color: #BABABA;
   text-transform: uppercase;
-`
-
-export const PostItemInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.5rem;
-`
-
-export const PostItemDate = styled.time`
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+  font-weight: 100;
+  color:#FF4438;
 `
 
 export const PostItemTitle = styled.h1`
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin: 0.2rem 0 0.5rem;
+  color:#fff;
+  margin-bottom: 1rem;
 `
 
 export const PostItemDescription = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2;
+  color: #BABABA;
+  margin-bottom: 0.6rem;
 `
+
+export const PostItemInfo = styled.div`
+
+`
+
+export const PostItemDate = styled.time`
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color:#fff;
+`
+
+

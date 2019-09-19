@@ -6,6 +6,14 @@ import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 import Pagination from '../components/Pagination'
 
+import styled from "styled-components"
+export const PageTitle = styled.h2`
+  color: #fff;
+  font-size:2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+`
+
 const BlogList = props => {
   const postList = props.data.allMarkdownRemark.edges
 
@@ -17,6 +25,9 @@ const BlogList = props => {
 
   return (
     <Layout>
+
+      <PageTitle>Recent Articles</PageTitle>
+
       <SEO title="Home" />
       {postList.map(
         ({
@@ -66,7 +77,7 @@ export const query = graphql`
           frontmatter {
             background
             category
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+            date(formatString: "MMMM D, YYYY")
             description
             title
           }

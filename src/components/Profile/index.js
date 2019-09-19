@@ -1,10 +1,12 @@
 import React from "react"
+import * as S from './styled'
 
 const Profile = () => (
-  <div className="Profile-wrapper">
-    <h1>Matheus Quintaes .</h1>
-    <h2>Front-end Ux/UI</h2>
-  </div>
+  <S.ProfileWrapper>
+    <S.Title>Matheus Quintaes .</S.Title>
+    <S.TitleMobile>MQ <span>.</span></S.TitleMobile>
+    <S.Description>Front-end Ux/UI</S.Description>
+  </S.ProfileWrapper>
 )
 
 export default Profile
