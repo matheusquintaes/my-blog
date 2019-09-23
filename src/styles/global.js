@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    background: #141414;
+    background: var(--background);
     line-height: 1;
     font-size: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -64,5 +64,15 @@ const GlobalStyles = createGlobalStyle`
   	width: 100%;
   	height: auto;
   }
+
+  body {
+    --text: #fff;
+    --textSecondColor: #BABABA;
+    --highlight: #ff4438;
+    --sideBarBackgorund: #1d1d1d;
+    --background: #141414;
+    --red: #fe4338;
+  }
+ 
 `
 export default GlobalStyles

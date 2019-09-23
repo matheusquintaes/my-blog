@@ -7,7 +7,7 @@ export const RecommendedWrapper = styled.section`
 
 export const RecommendedLink = styled(Link)`
   align-items: center;
-  color: #BABABA;
+  color: var(--textSecondColor);
   display: flex;
   padding: 0.6rem ;
   text-decoration: none;

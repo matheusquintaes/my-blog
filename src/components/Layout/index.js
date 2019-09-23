@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 
 import Sidebar from "../Sidebar"
 import HeaderMobile from "../HeaderMobile"
+import NightModeBtn from "../NightModeBtn"
 
 import * as S from "./styled"
 import GlobalStyles from "../../styles/global"
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <HeaderMobile/>
       <Sidebar />
+      <NightModeBtn/>
       <S.LayoutMain>{children}</S.LayoutMain>
     </S.LayoutWrapper>
   )
