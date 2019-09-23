@@ -20,6 +20,6 @@ export const MenuLinksLink = styled(Link)`
   text-decoration: none;
   transition: color 0.5s;
   &:hover {
-    color: #var(--red);
+    color: var(--highlight);
   }
 `

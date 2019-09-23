@@ -16,6 +16,6 @@ export const Description = styled.p`
 `
 
 export const Dot = styled.span`
-    color: #var(--red);
+    color: var(--highlight);
     font-size: 1.8rem;
 `

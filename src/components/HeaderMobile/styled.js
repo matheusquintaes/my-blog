@@ -22,7 +22,7 @@ export const Title = styled.h1`
     margin-right: 0.8rem;
 `
 export const Dot = styled.span`
-    color: #var(--red);
+    color: var(--highlight);
     font-size: 1.8rem;
 `
 

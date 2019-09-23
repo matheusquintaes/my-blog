@@ -68,11 +68,21 @@ const GlobalStyles = createGlobalStyle`
   body {
     --text: #fff;
     --textSecondColor: #BABABA;
-    --highlight: #ff4438;
+    --highlight: #fe4338;
     --sideBarBackgorund: #1d1d1d;
     --background: #141414;
-    --red: #fe4338;
+  }
+  
+  
+  body.light {
+    --text: #343434;
+    --textSecondColor: #9D9D9D;
+    --highlight: #0001FF;
+    --sideBarBackgorund: #F5F5F5;
+    --background: #fff;
+
   }
  
+
 `
 export default GlobalStyles

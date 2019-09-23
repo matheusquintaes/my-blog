@@ -7,4 +7,5 @@ export const Button = styled.div`
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+  font-size: 0.8rem;
 `
