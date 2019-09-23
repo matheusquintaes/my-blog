@@ -4,8 +4,11 @@ import * as S from "./styled"
 
 const HeaderMobile = () => (
     <S.Header>
-        <S.Title>MQ <S.Dot>.</S.Dot></S.Title>
-        <S.Menu>Menu</S.Menu>
+        <S.LinkHome to="/">
+            <S.Title>MQ <S.Dot>.</S.Dot></S.Title>
+        </S.LinkHome>
+            <S.Menu>Menu</S.Menu>
+        
     </S.Header>
 )
 

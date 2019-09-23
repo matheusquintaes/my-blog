@@ -9,7 +9,7 @@ import Pagination from '../components/Pagination'
 import styled from "styled-components"
 export const PageTitle = styled.h2`
   color: #fff;
-  font-size:2rem;
+  font-size:1.4rem;
   font-weight: bold;
   margin-bottom: 3rem;
 `

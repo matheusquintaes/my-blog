@@ -1,10 +1,16 @@
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 export const Header = styled.header`
-    display: flex;
     width:100%;
-    justify-content: space-between;
     margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+`
+
+export const LinkHome = styled(Link)`
+
+    text-decoration: none;
 `
 export const Title = styled.h1`
     color: #fff;
@@ -12,7 +18,7 @@ export const Title = styled.h1`
     margin-right: 0.8rem;
 `
 export const Dot = styled.span`
-    color: #FF4438
+    color: #FF4438;
     font-size: 1.8rem;
 `
 
