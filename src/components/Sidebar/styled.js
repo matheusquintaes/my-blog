@@ -2,10 +2,10 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const SidebarWrapper = styled.aside`
-  align-items: center;
-  background: var(--sideBarBackgorund);
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--sideBarBackgorund);
   height: 100vh;
   position: fixed;
   padding: 2rem;
@@ -13,7 +13,7 @@ export const SidebarWrapper = styled.aside`
   width: 25rem;
   display:none;
     ${media.greaterThan('large')`
-      display: block;
+      display: flex;
     `}
 `
 

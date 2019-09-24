@@ -9,3 +9,11 @@ export const Button = styled.div`
   cursor: pointer;
   font-size: 0.8rem;
 `
+
+export const IconWrapper = styled.div`
+  fill: var(--text);
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: -6px 10px 0px 0px;
+`

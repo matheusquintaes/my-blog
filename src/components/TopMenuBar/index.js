@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react"
+import { Lightbulb } from "styled-icons/fa-solid/Lightbulb"
+
 
 import * as S from "./styled"
 
-const NightModeBtn = () => {
+const TopMenuBar = () => {
     const [theme, setTheme] = useState(null)
   
     const isDarkMode = theme === "dark"
@@ -13,12 +15,14 @@ const NightModeBtn = () => {
     }, [])
 
     return (
+
         <S.Button title="Mudar o tema"
-        onClick={() => {
-          window.__setPreferredTheme(isDarkMode ? "light" : "dark")
-        }}
-        className={theme}> Nigth Mode: {theme == "dark" ? "ON" : "OFF"} </S.Button>
+          onClick={() => {
+            window.__setPreferredTheme(isDarkMode ? "light" : "dark")
+          }}
+        className={theme}>  <S.IconWrapper> <Lightbulb /> </S.IconWrapper>  </S.Button>
+   
     )
 }
 
-export default NightModeBtn
+export default TopMenuBar

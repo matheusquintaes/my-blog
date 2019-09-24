@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import Sidebar from "../Sidebar"
 import HeaderMobile from "../HeaderMobile"
-import NightModeBtn from "../NightModeBtn"
+import TopMenuBar from "../TopMenuBar"
 
 import * as S from "./styled"
 import GlobalStyles from "../../styles/global"
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <HeaderMobile/>
       <Sidebar />
-      <NightModeBtn/>
+      <TopMenuBar/>
       <S.LayoutMain>{children}</S.LayoutMain>
     </S.LayoutWrapper>
   )
