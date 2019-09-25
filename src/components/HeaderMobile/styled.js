@@ -3,13 +3,19 @@ import { Link } from "gatsby"
 import media from "styled-media-query"
 
 export const Header = styled.header`
-    width:100%;
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    width:100%
     ${media.greaterThan('large')`
         display:none;
     `}
+`
+
+export const HeaderWrapper = styled.div`
+    display: flex
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    width:100%;
 `
 
 export const LinkHome = styled(Link)`
@@ -19,16 +25,32 @@ export const LinkHome = styled(Link)`
 export const Title = styled.h1`
     color: var(--text);
     font-size: 1.8rem;
-    margin-right: 0.8rem;
-`
-export const Dot = styled.span`
-    color: var(--highlight);
-    font-size: 1.8rem;
 `
 
-export const Menu = styled.a`
-    align-self: end
+export const MenuBtn = styled.button`
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
     color: var(--text);
     font-size: 1.2rem;
-    align-self: center;
+    font-family: 'Montserrat',sans-serif;
 `
+
+export const MenuContent = styled.div`
+    display:none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 7rem;
+    right: 0;
+    padding: 0rem 1.4rem 1.4rem 1.4rem;
+
+    &.state-nav-visible {
+        display:block;
+        background: var(--background);
+    }
+
+`
+
+

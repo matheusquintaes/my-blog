@@ -16,11 +16,15 @@ const TopMenuBar = () => {
 
     return (
 
-        <S.Button title="Mudar o tema"
-          onClick={() => {
-            window.__setPreferredTheme(isDarkMode ? "light" : "dark")
-          }}
-        className={theme}>  <S.IconWrapper> <Lightbulb /> </S.IconWrapper>  </S.Button>
+     
+          <S.IconWrapper> 
+            <Lightbulb title="Mudar o tema"
+              onClick={() => {
+                window.__setPreferredTheme(isDarkMode ? "light" : "dark")
+              }}
+              className={theme}/> 
+          </S.IconWrapper>  
+  
    
     )
 }

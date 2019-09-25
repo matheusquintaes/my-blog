@@ -1,19 +1,16 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
-
-export const Button = styled.div`
+export const IconWrapper = styled.div`
   color: var(--text);
+  width: 16px;
+  height: 16px;
   position: absolute;
   top: 1rem;
   right: 1rem;
-  cursor: pointer;
-  font-size: 0.8rem;
-`
-
-export const IconWrapper = styled.div`
-  fill: var(--text);
-  width: 16px;
-  height: 16px;
-  float: left;
-  margin: -6px 10px 0px 0px;
+  cursor:pointer;
+  display:none;
+    ${media.greaterThan('large')`
+      display:block;
+  `}
 `
