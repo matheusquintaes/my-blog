@@ -3,17 +3,13 @@ import { Link } from "gatsby"
 import media from "styled-media-query"
 
 export const Header = styled.header`
-    display:flex;
     width:100%;
     background: var(--background);
+    position:fixed;
 
     ${media.greaterThan('large')`
         display:none;
     `}
-
-    &.state-header-fixed{
-        position:fixed;
-    }
 `
 
 export const HeaderWrapper = styled.div`

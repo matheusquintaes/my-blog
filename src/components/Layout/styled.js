@@ -5,11 +5,13 @@ export const LayoutWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
   padding: 1.4rem;
+  margin-top: 4rem;
   ${media.greaterThan('large')`
     min-height: 100vh;
     width: 100%;
     padding: 0px;
     flex-wrap: nowrap;
+    margin-top: 0;
   `}
 `
 
