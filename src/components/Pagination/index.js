@@ -18,7 +18,7 @@ const Pagination = ({
       direction="left"
       bg={getThemeColor()}
       duration={0.6}
-      activeClassName="active" to={prevPage}>← página anterior</AniLink>}
+      activeClassName="active" to={prevPage}>← Previous page</AniLink>}
     <p>
       {currentPage} de {numPages}
     </p>
@@ -26,7 +26,7 @@ const Pagination = ({
       direction="right"
       bg={getThemeColor()}
       duration={0.6}
-      activeClassName="active" to={nextPage}>proxima página →</AniLink>}
+      activeClassName="active" to={nextPage}>Next page →</AniLink>}
   </S.PaginationWrapper>
 )
 

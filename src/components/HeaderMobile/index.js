@@ -6,7 +6,6 @@ import MenuLinks from '../MenuLinks'
 import SocialLinks from '../SocialLinks'
 import Profile from '../Profile'
 
-
 import * as S from "./styled"
 
 const HeaderMobile = () => {
@@ -20,6 +19,7 @@ const HeaderMobile = () => {
                     <S.LinkHome to="/">
                         <S.Title>MQ.</S.Title>
                     </S.LinkHome>
+                    
                     <S.MenuBtn onClick={ () => setNavOpen(!navOpen)}> Menu </S.MenuBtn>
                     <S.MenuContent className={ navOpen ? 'state-nav-visible' : ''}>
                         <MenuLinks/>

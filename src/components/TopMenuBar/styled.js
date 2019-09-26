@@ -5,12 +5,13 @@ export const IconWrapper = styled.div`
   color: var(--text);
   width: 16px;
   height: 16px;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   cursor:pointer;
-  display:none;
+    display:none;
+
     ${media.greaterThan('large')`
       display:block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
   `}
 `

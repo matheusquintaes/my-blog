@@ -56,4 +56,7 @@ export const MenuContent = styled.div`
 
 `
 
-
+export const NightMode = styled.p`
+    margin-top: 1rem;
+    color: var(--text);
+`
