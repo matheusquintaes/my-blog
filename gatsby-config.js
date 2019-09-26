@@ -3,6 +3,7 @@ module.exports = {
     title: `Blog`,
     description: `Front-end`,
     author: `Matheus Quintaes`,
+    siteUrl: `https://matheusquintaes.netlify.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

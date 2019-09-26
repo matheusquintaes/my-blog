@@ -38,6 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
               date(formatString: "MMMM D, YYYY")
               description
               title
+              image
             }
             timeToRead
           }
