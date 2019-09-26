@@ -16,9 +16,6 @@ export const RecommendedLink = styled(Link)`
   &:hover {
     background: #38444d;
   }
-  &.previous {
-    border-right: 1px solid #38444d;
-  }
   &.next {
     justify-content: flex-end;
   }

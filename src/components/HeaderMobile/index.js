@@ -11,7 +11,7 @@ const HeaderMobile = () => {
     const [ navOpen, setNavOpen ] = useState(false)
 
     return (
-        <S.Header>
+        <S.Header className={ navOpen ? 'state-header-fixed' : ''} >
             <S.HeaderWrapper>
                 <S.LinkHome to="/">
                     <S.Title>MQ.</S.Title>

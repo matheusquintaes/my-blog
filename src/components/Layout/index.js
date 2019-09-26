@@ -11,13 +11,15 @@ import GlobalStyles from "../../styles/global"
 const Layout = ({ children }) => {
   
   return (
+    <>
+    <HeaderMobile/>
     <S.LayoutWrapper>
       <GlobalStyles />
-      <HeaderMobile/>
       <Sidebar />
       <TopMenuBar/>
       <S.LayoutMain>{children}</S.LayoutMain>
     </S.LayoutWrapper>
+    </>
   )
 }
 

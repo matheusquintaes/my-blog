@@ -4,10 +4,16 @@ import media from "styled-media-query"
 
 export const Header = styled.header`
     display:flex;
-    width:100%
+    width:100%;
+    background: var(--background);
+
     ${media.greaterThan('large')`
         display:none;
     `}
+
+    &.state-header-fixed{
+        position:fixed;
+    }
 `
 
 export const HeaderWrapper = styled.div`
@@ -16,6 +22,7 @@ export const HeaderWrapper = styled.div`
     justify-content: space-between;
     height: 3rem;
     width:100%;
+    padding:2rem 1.4rem 1.4rem 1.4rem;
 `
 
 export const LinkHome = styled(Link)`
@@ -42,9 +49,9 @@ export const MenuContent = styled.div`
     position: fixed;
     height: 100%;
     width: 100%;
-    top: 7rem;
+    top: 3rem;
     right: 0;
-    padding: 0rem 1.4rem 1.4rem 1.4rem;
+    padding: 1.4rem;
 
     &.state-nav-visible {
         display:block;

@@ -16,7 +16,7 @@ export const LayoutWrapper = styled.section`
 export const LayoutMain = styled.main`
   background: var(--background);
   width: 100%;
-  padding-top: 4rem;
+  padding-top: 1rem;
   
   ${media.greaterThan('large')`
     min-height: 100vh;
