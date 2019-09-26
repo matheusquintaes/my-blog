@@ -6,8 +6,9 @@ module.exports = {
     siteUrl: `https://matheusquintaes.netlify.com`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     // needs to be the first to work with gatsby-remark-images
     {
       resolve: `gatsby-source-filesystem`,
