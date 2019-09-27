@@ -6,7 +6,7 @@ import * as S from './styled'
 
 const Profile = () => (
   <S.ProfileWrapper>
-    <S.Title to='/' cover
+    <S.Title cover
       direction="right"
       bg={getThemeColor()}
       duration={0.6}

@@ -10,8 +10,9 @@ export const LayoutWrapper = styled.section`
     min-height: 100vh;
     width: 100%;
     padding: 0px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 0;
+    flex-direction: row;
   `}
 `
 
@@ -23,7 +24,7 @@ export const LayoutMain = styled.main`
   ${media.greaterThan('large')`
     min-height: 100vh;
     width: 100%;
-    padding: 5.75rem 3.75rem 3rem 30rem;
+    padding: 3.75rem 3.75rem 3rem 30rem;
       `}
 `
 
