@@ -14,7 +14,7 @@ const PostItem = ({
   description,
 }) => (
   <S.PostItemLink cover
-      direction="left"
+      direction="right"
       bg={getThemeColor()}
       duration={0.6}
       activeClassName="active" to={slug}>

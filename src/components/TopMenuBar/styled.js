@@ -7,6 +7,7 @@ export const IconWrapper = styled.div`
   height: 16px;
   cursor:pointer;
     display:none;
+    position:relative;
 
     ${media.greaterThan('large')`
       display:block;

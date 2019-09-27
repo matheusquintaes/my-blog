@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Sidebar from "../Sidebar"
 import { TransitionPortal } from "gatsby-plugin-transition-link"
 import HeaderMobile from "../HeaderMobile"
-import TopMenuBar from "../TopMenuBar"
+// import TopMenuBar from "../TopMenuBar"
 
 import * as S from "./styled"
 import GlobalStyles from "../../styles/global"
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
       <TransitionPortal level="top">
         <Sidebar />
       </TransitionPortal>
-      <TopMenuBar/>
+      {/* <TopMenuBar/> */}
       <S.LayoutMain>{children}</S.LayoutMain>
     </S.LayoutWrapper>
     </>
