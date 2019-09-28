@@ -5,6 +5,8 @@ import { TransitionPortal } from "gatsby-plugin-transition-link"
 import MenuLinks from '../MenuLinks'
 import SocialLinks from '../SocialLinks'
 import Profile from '../Profile'
+import LogoSVG from '../../images/logo-sm-dark.svg'
+
 
 import * as S from "./styled"
 
@@ -17,7 +19,8 @@ const HeaderMobile = () => {
             <S.Header className={ navOpen ? 'state-header-fixed' : ''} >
                 <S.HeaderWrapper>
                     <S.LinkHome to="/">
-                        <S.Title>MQ.</S.Title>
+                        <LogoSVG width="50px" height="auto"/>
+                        {/* <S.Title>MQ.</S.Title> */}
                     </S.LinkHome>
                     
                     <S.MenuBtn onClick={ () => setNavOpen(!navOpen)}> Menu </S.MenuBtn>
