@@ -12,17 +12,18 @@ import GlobalStyles from "../../styles/global"
 const Layout = ({ children }) => {
   
   return (
-    <>
-    <HeaderMobile/>
+ 
+   
     <S.LayoutWrapper>
+      <HeaderMobile/>
       <GlobalStyles />
       <TransitionPortal level="top">
         <TopMenuBar/>
         <Sidebar />
       </TransitionPortal>
-      <S.LayoutMain>{children}</S.LayoutMain>
+      <S.LayoutMain> {children} </S.LayoutMain>
     </S.LayoutWrapper>
-    </>
+
   )
 }
 

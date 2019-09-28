@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Blog`,
+    position: `Front-end`,
     description: `Front-end`,
     author: `Matheus Quintaes`,
     siteUrl: `https://matheusquintaes.netlify.com`,
@@ -23,6 +24,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: `${__dirname}/src/images`
+        }
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,11 +1,13 @@
 import React from "react"
 
+import Avatar from "../Avatar"
 import getThemeColor from "../../utils/getThemeColor"
 
 import * as S from './styled'
 
 const Profile = () => (
   <S.ProfileWrapper>
+    <Avatar/>
     <S.Title cover
       direction="right"
       bg={getThemeColor()}

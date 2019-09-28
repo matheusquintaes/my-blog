@@ -6,9 +6,10 @@ export const TopMenuWrapper = styled.div`
   width:100%;
   height: 2rem;
   padding-right: 1rem;
+  padding-top: 0.5rem;
   position: fixed;
-  ${media.greaterThan('large')`
-
+  ${media.lessThan('large')`
+    display:none;
   `}
 `
 
