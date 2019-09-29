@@ -72,6 +72,14 @@ const GlobalStyles = createGlobalStyle`
       "Helvetica Neue", 
       sans-serif;
     font-size: 1.4rem;
+    color:  var(--text);
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+  p{
+    line-height: 2rem;
   }
   img {
     display: block;
