@@ -5,20 +5,24 @@ export const ProfileWrapper = styled.section`
     margin: 4rem 0;
 `
 export const Title = styled(AniLink)`
+    font-family: 'Prompt', sans-serif;
     color: var(--text);
     font-size:2rem;
-    font-weight: 800;
-    margin-bottom: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
     text-decoration: none;
     display:block;
+    letter-spacing: -1px;
 `
 
 export const Description = styled.p`
     color: var(--textSecondColor);
-    text-transform: uppercase;
+    font-size: 1rem;
 `
 
 export const Dot = styled.span`
     color: var(--highlight);
-    font-size: 1.8rem;
+    font-size: 4rem;
+    line-height: 1px;
+    margin-left: -6px;
 `

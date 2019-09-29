@@ -26,7 +26,7 @@ export const PostItemCategory = styled.div`
 
 export const PostItemTitle = styled.h1`
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   color:var(--text);
   margin-bottom: 1rem;
 `

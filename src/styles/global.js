@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
 
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -32,6 +32,10 @@ const GlobalStyles = createGlobalStyle`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
+  html {
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+  }
   body {
     line-height: 1;
   }
@@ -57,7 +61,17 @@ const GlobalStyles = createGlobalStyle`
     background: var(--background);
     line-height: 1;
     font-size: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      Roboto, 
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue", 
+      sans-serif;
+    font-size: 1.4rem;
   }
   img {
     display: block;
@@ -76,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
   
   body.light {
     --text: #343434;
-    --textSecondColor: #9D9D9D;
+    --textSecondColor: #717171;
     --highlight: #0001FF;
     --sideBarBackgorund: #F5F5F5;
     --background: #fff;

@@ -10,7 +10,7 @@ import styled from "styled-components"
 export const PageTitle = styled.h2`
   color: var(--text);
   font-size:1.4rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 3rem;
 `
 

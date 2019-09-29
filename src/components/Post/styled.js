@@ -7,9 +7,9 @@ export const PostHeader = styled.header`
 `
 
 export const PostTitle = styled.h1`
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 3.6rem;
   margin: 1rem auto;
+  font-weight: 500;
 `
 
 export const PostDescription = styled.h2`
@@ -29,11 +29,9 @@ export const MainContent = styled.section`
   padding: 2rem 0px;
   margin: auto;
   max-width: 70rem;
-
   ${media.greaterThan('large')`
     margin: initial;
   `}
-
   p,
   h1,
   h2,
@@ -44,13 +42,14 @@ export const MainContent = styled.section`
   .tags,
   iframe,
   .button-post {
-    color: var(--text);
+    color: var(--textSecondColor);
     font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 1.7;
-    letter-spacing: 0.069rem;
+    font-weight: 400;
+    letter-spacing: -0.04px;
+    line-height: 1.5em;
   }
   p {
+
     margin: 0 auto 1.6rem;
   }
   h1,
@@ -58,6 +57,7 @@ export const MainContent = styled.section`
   h3,
   h4,
   h5 {
+    color: var(--text);
     margin: 2.4rem auto 1rem;
   }
   ul,
@@ -107,13 +107,13 @@ export const MainContent = styled.section`
   h4,
   h5 {
     line-height: 1.4;
-    font-weight: 800;
+    font-weight: 600;
   }
   h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   h3 {
     font-size: 1.2rem;
