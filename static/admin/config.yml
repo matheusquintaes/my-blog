@@ -1,13 +1,9 @@
 backend:
   name: github
   repo: matheusquintaes/my-blog
-  branch: master
-  site_domain: https://matheusquintaes.netlify.com/
-
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
 public_folder: "assets/img"
-
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Posts" # Used in the UI
