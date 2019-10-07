@@ -4,6 +4,9 @@ import media from "styled-media-query"
 
 export const PostHeader = styled.header`
   color: var(--text);
+  max-width: 60rem;
+  margin: auto;
+  padding: 0px 5rem 0px 0px;
 `
 
 export const PostTitle = styled.h1`
@@ -26,11 +29,12 @@ export const PostDate = styled.p`
 `
 
 export const MainContent = styled.section`
-  padding: 2rem 0px;
-  margin: auto;
-  max-width: 70rem;
+    max-width: 60rem;
+
+
   ${media.greaterThan('large')`
-    margin: initial;
+    margin: auto;
+    padding: 0px 5rem 0px 0px;
   `}
   p,
   h1,
