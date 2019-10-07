@@ -27,8 +27,6 @@ Gatsby is a powerful framework. One of the advantages is generating static files
 
 Once Gatsby generates static files and has a good system of cache, the SEO and performance say thank you.
 
-
-
 ![Performance](/assets/img/capture.png "Performance")
 
 Although Gatsby is younger than [Jekyll ](https://jekyllrb.com/)or [Hugo](https://gohugo.io/), the docs and the community are incredible, every time I have an issue, I can quickly find a solution there.
@@ -38,8 +36,6 @@ Moreover, Gatsby has a [lot of plugins](https://www.gatsbyjs.org/plugins/) that 
 e.g. the plugin that makes your website become a PWA with a single line!
 
 ## Gatsby Uses GraphQL
-
-
 
 ![GraphQL](/assets/img/1_rfckeckmtid0waaletckag.png "GraphQL")
 
@@ -79,7 +75,5 @@ and more deployment options:
 To write my posts and upload images I used [Netlify CMS](https://www.netlifycms.org/).
 
 Netlify CMS can provide the Markup data for a Gatsby website, which allows me to enter content through an intuitive and easy to use interface. 
-
-
 
 ![Gatsby CMS](/assets/img/netlify-cms2.png "Gatsby CMS")
