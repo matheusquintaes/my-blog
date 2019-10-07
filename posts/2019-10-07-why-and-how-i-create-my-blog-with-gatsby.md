@@ -7,8 +7,6 @@ date: '2019-10-07 08:07:25'
 thumbnail: /assets/img/why-and-how-i-create-my-blog-with-gatsby.jpg
 category: DEV
 ---
-I felt I needed to study new technologies and, for me one of the bests ways to learn something is by practicing it.
-
 When you create your project, you learn a lot in the process.
 
 You learn how to use the tools, how to publish, use custom domain types, like DNS.
