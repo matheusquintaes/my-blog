@@ -18,7 +18,7 @@ const HeaderMobile = () => {
         <TransitionPortal level="top">
             <S.Header className={ navOpen ? 'state-header-fixed' : ''} >
                 <S.HeaderWrapper>
-                    <S.LinkHome to="/">
+                    <S.LinkHome to="/" title="Home">
                         <LogoSVG width="50px" height="100%"/>
                         {/* <S.Title>MQ.</S.Title> */}
                     </S.LinkHome>
