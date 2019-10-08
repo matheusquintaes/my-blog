@@ -15,7 +15,8 @@ export const CommentsWrapper = styled.section`
   }
   
   ${media.greaterThan('large')`
-    padding: 3rem 6.4rem 3rem;
+    max-width: 44rem;
+    padding: 0px 5rem 0px 0px;
 `}
 
 

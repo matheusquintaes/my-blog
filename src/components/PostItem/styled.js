@@ -15,7 +15,7 @@ export const PostItemWrapper = styled.section`
 
 `
 
-export const PostItemCategory = styled.div`
+export const PostItemCategory = styled.p`
   color: var(--text);
   text-transform: uppercase;
   font-size: 0.8rem;
