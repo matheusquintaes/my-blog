@@ -28,7 +28,9 @@ const BlogList = props => {
 
       <PageTitle>Recent Articles</PageTitle>
 
-      <SEO title="Home" />
+      <SEO  title="Matheus Quintaes | Blog"
+            description="Front-end Developer | UI Designer"
+      />
       {postList.map(
         ({
           node: {
