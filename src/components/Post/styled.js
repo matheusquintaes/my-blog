@@ -4,22 +4,29 @@ import media from "styled-media-query"
 
 export const PostHeader = styled.header`
   color: var(--text);
-  max-width: 60rem;
+
+  ${media.greaterThan('large')`
   margin: auto;
+  max-width: 44rem;
   padding: 0px 5rem 0px 0px;
+`}
+
+
+  margin: auto;
+
 `
 
 export const PostTitle = styled.h1`
   font-size: 3.6rem;
-  margin: 1rem auto;
+  margin: 0 auto 1rem auto;
   font-weight: 500;
 `
 
 export const PostDescription = styled.h2`
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 200;
   color: var(--textSecondColor);
-  margin: 0.8rem auto;
+  margin: 0 auto 3rem auto;
 `
 
 export const PostDate = styled.p`
@@ -29,11 +36,10 @@ export const PostDate = styled.p`
 `
 
 export const MainContent = styled.section`
-    max-width: 60rem;
-
-
+  
   ${media.greaterThan('large')`
     margin: auto;
+    max-width: 44rem;
     padding: 0px 5rem 0px 0px;
   `}
   p,
