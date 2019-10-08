@@ -33,12 +33,11 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              background
               category
               date(formatString: "MMMM D, YYYY")
               description
               title
-              image
+              thumbnail
             }
             timeToRead
           }
