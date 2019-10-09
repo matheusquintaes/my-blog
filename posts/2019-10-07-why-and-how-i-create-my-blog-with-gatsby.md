@@ -59,7 +59,7 @@ This was one of the coolest discoveries I’ve made in this project, and soon I 
 
 Netlify and Netlify CMS
 
-Netlify It's the good static site host, you can_make a fantastic website for free:
+Netlify It's the good static site host, you can make a fantastic website for free:
 
 * They give you a custom URL for your project under netlify.com
 * Free SSL with Let's Encrypt integration
