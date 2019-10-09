@@ -46,7 +46,7 @@ export const query = graphql`
       frontmatter {
         title
         description
-        date
+        date(formatString: "MMMM D, YYYY") 
         thumbnail
       }
       html
