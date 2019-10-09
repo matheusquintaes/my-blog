@@ -45,7 +45,7 @@ Here are some quotes from the industry that can help and put it in their own wor
 
 > 1. UX is focused on the user’s journey to solve a problem, UI is focused on how a product’s surfaces look and function
 
-![Ken Norton](/assets/img/ken-norton.png "Ken Norton")
+![](/assets/img/ken-norton.png)
 
 **Ken Norton** – Partner at **Google Ventures**, Ex-Product Manager at Google
 
