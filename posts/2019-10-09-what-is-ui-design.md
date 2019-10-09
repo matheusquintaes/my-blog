@@ -1,6 +1,6 @@
 ---
 title: 'What is UI Design? '
-description: 'What is UI Design? '
+description: UI Design Fundamentals  Pt.1
 date: '2019-10-09 08:05:35'
 thumbnail: /assets/img/1_rycwrgsgdoxheijwpyti4w.png
 category: DESIGN
