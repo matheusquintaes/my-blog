@@ -75,3 +75,5 @@ To write my posts and upload images I used [Netlify CMS](https://www.netlifycms.
 Netlify CMS can provide the Markup data for a Gatsby website, which allows me to enter content through an intuitive and easy to use interface. 
 
 ![Gatsby CMS](/assets/img/netlify-cms2.png "Gatsby CMS")
+
+![](/assets/img/dove-png-transparent-background-85-images-in-collection-page-3-transparent-png-images-260_361.jpg)
