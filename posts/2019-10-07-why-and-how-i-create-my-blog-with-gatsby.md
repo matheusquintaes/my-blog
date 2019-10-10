@@ -76,4 +76,4 @@ Netlify CMS can provide the Markup data for a Gatsby website, which allows me to
 
 ![Gatsby CMS](/assets/img/netlify-cms2.png "Gatsby CMS")
 
-![](/assets/img/dove-png-transparent-background-85-images-in-collection-page-3-transparent-png-images-260_361.jpg)
+![](/assets/img/google_png19644.png)
