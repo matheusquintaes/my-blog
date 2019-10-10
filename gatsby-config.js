@@ -55,6 +55,7 @@ module.exports = {
             options: {
               maxWidth: 960,
               linkImagesToOriginal: false,
+              disableBgImageOnAlpha: true,
             },
           },
           `gatsby-remark-lazy-load`,
