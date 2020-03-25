@@ -4,7 +4,7 @@ import getThemeColor from "../../utils/getThemeColor"
 import Avatar from "../Avatar"
 import * as S from "./styled"
 
-const HeaderMobile = () => {
+const HeaderMobile = () => { 
 
     return (
 

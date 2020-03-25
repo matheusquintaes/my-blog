@@ -2,17 +2,19 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import WorkList from "../components/WorkList"
 
-const WorksPage = (props) => (
-  <Layout>
-    <SEO title="About" />
-    <WorkList works={props} />
-  </Layout>
+const TestPage = (props) => (
+
+  <>
+    {console.log(props)}
+    <Layout>
+      <SEO title="Test" />
+    </Layout>
+  </>
 )
 
 export const query = graphql`
-  query WorkList {
+  query Test {
     allMarkdownRemark(filter: {fields: {collection: {eq: "works"}}}) {
       edges {
         node {
@@ -27,4 +29,4 @@ export const query = graphql`
   }
 `
 
-export default WorksPage
+export default TestPage
