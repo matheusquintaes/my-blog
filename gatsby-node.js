@@ -19,6 +19,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: "slug",
       value: `/${slug.slice(12)}`,
     })
+
+    const parent = getNode(node.parent)
+
+    createNodeField({
+      node,
+      name: "collection",
+      value: parent.sourceInstanceName
+    });
   }
 }
 
@@ -30,7 +38,8 @@ exports.createPages = ({ graphql, actions }) => {
         edges {
           node {
             fields {
-              slug
+              slug,
+              collection
             }
             frontmatter {
               category
@@ -61,15 +70,23 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    const posts = result.data.allMarkdownRemark.edges
 
-    posts.forEach(({ node, next, previous }) => {
+    const allEdges = result.data.allMarkdownRemark.edges
+
+
+    const postEdges = allEdges.filter(
+      edge => edge.node.fields.collection === `posts`
+    );
+
+    const workEdges = allEdges.filter(
+      edge => edge.node.fields.collection === `works`
+    );
+
+    postEdges.forEach(({ node, next, previous }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/blog-post.js`),
         context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
           slug: node.fields.slug,
           previousPost: next,
           nextPost: previous,
@@ -78,7 +95,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
     const postsPerPage = 6
-    const numPages = Math.ceil(posts.length / postsPerPage)
+    const numPages = Math.ceil(postEdges.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, index) => {
       createPage({
@@ -92,5 +109,18 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
+
+    workEdges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/work-post.js`),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    })
+
+
+
   })
 }

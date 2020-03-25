@@ -15,6 +15,7 @@ export const PageTitle = styled.h2`
 `
 
 const BlogList = props => {
+
   const postList = props.data.allMarkdownRemark.edges
 
   const { currentPage, numPages } = props.pageContext
@@ -69,11 +70,13 @@ export const query = graphql`
       sort: { fields: frontmatter___date, order: DESC }
       limit: $limit
       skip: $skip
+      filter: { fields: {collection: {eq: "posts"}} }
     ) {
       edges {
         node {
           fields {
-            slug
+            slug,
+
           }
           frontmatter {
             category
