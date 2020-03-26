@@ -1,6 +1,6 @@
 ---
-title: Tudo House
-description: how to publish, use custom domain types, like DNS.
+title: Personality
+description: Lorem Ipsum
 date: '2019-10-07 08:07:25'
 thumbnail: /assets/img/thumb.png
 category: Website

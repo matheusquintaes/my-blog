@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -22,6 +23,9 @@ export const query = graphql`
             description
             thumbnail
             category
+          }
+          fields {
+            slug
           }
         }
       }

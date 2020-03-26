@@ -14,7 +14,8 @@ const WorkList = props => {
         {works.map(
           ({
             node: {
-              frontmatter: {slug, category, description, title, thumbnail},
+              frontmatter: {category, description, title, thumbnail},
+              fields: {slug},
             },
           }) => (
               <WorkItem

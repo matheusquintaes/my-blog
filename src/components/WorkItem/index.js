@@ -16,7 +16,7 @@ const WorkItem = ({
       direction="right"
       bg={getThemeColor()}
       duration={0.6}
-      activeClassName="active" to={slug}>
+      activeClassName="active" to={`works/${slug}`}>
     <S.WorkItemWrapper>
       <S.WorkItemImage src={thumbnail}></S.WorkItemImage>
       <S.WorkItemCategory>{category}</S.WorkItemCategory>

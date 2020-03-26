@@ -112,15 +112,12 @@ exports.createPages = ({ graphql, actions }) => {
 
     workEdges.forEach(({ node }) => {
       createPage({
-        path: node.fields.slug,
+        path: `works${node.fields.slug}`,
         component: path.resolve(`./src/templates/work-post.js`),
         context: {
           slug: node.fields.slug,
         },
       })
     })
-
-
-
   })
 }
