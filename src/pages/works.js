@@ -20,6 +20,8 @@ export const query = graphql`
           frontmatter {
             title
             description
+            thumbnail
+            category
           }
         }
       }
