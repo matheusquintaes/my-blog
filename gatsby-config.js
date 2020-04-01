@@ -60,9 +60,10 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 960,
+              maxWidth: 1440,
               linkImagesToOriginal: false,
               disableBgImageOnAlpha: true,
+              quality: 100
             },
           },
           `gatsby-remark-lazy-load`,

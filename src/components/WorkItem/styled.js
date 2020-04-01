@@ -14,6 +14,7 @@ export const WorkItemLink = styled(AniLink)`
 
   ${media.lessThan('medium')`
     width: 100%;
+    padding: 0;
   `}
 `
 

@@ -22,7 +22,7 @@ export const LayoutMain = styled.main`
   ${media.greaterThan('large')`
     min-height: 100vh;
     width: 100%;
-    padding: 3.75rem 3rem 3rem 28rem;
+    padding: 3.75rem 3rem 3rem 29rem;
       `}
 `
 

@@ -6,7 +6,6 @@ import WorkItem from "../WorkItem"
 const WorkList = props => {
 
   const works = props.works.data.allMarkdownRemark.edges
-  console.log(works)
   return (
     <>
     <S.PageTitle>Works</S.PageTitle>

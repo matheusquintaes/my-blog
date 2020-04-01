@@ -16,7 +16,6 @@ export const PageTitle = styled.h2`
 
 const BlogList = props => {
 
-  console.log(props)
   const postList = props.data.allMarkdownRemark.edges
 
   const { currentPage, numPages } = props.pageContext
