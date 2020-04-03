@@ -11,7 +11,6 @@ import * as S from "../components/Work/styled"
 const WorkPost = ( {data }) => {
 
   const work = data.markdownRemark
-  console.log(work.html)
   return (
     <Layout>
      <SEO

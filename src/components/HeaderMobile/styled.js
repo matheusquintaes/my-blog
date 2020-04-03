@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
@@ -10,7 +9,7 @@ export const Header = styled.header`
     width:100%;
 `
 
-export const LinkHome = styled(Link)`
+export const LinkHome = styled(AniLink)`
     text-decoration: none;
     display: flex;
     align-items: center;
