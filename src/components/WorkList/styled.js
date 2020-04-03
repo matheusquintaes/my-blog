@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const WorksWrapper = styled.section`
   display: flex;
@@ -8,6 +9,10 @@ export const WorksWrapper = styled.section`
 `
 
 export const PageTitle = styled.h1`
-  font-size: 3rem;
+  font-size: 2rem;
+  ${media.greaterThan('large')`
+    font-size: 3rem;
+  `}
+
   margim-bottom: 3rem;
 `

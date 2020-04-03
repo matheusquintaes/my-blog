@@ -3,14 +3,15 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 
 export const WorkItemLink = styled(AniLink)`
-  width: 50%;
-  padding: 0 3em 0 0;
-  margin: 0 0 5rem;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 2rem;
   text-decoration: none;
 
-  ${media.lessThan('medium')`
-    width: 100%;
-    padding: 0;
+  ${media.greaterThan('medium')`
+    width: 50%;
+    padding: 0 3em 0 0;
+    margin: 0 0 5rem;
   `}
 `
 
@@ -27,7 +28,12 @@ export const WorkItemImage = styled.img`
 `
 
 export const WorkItemTitle = styled.h3`
-  font-size: 2rem;
+  font-size: 1.6rem;
+
+  ${media.greaterThan('large')`
+    font-size: 2rem;
+  `}
+
   font-weight: 500;
   color: var(--text);
   margin: 1.5rem 0 0.5rem 0;

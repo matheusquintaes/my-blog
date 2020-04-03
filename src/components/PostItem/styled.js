@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import media from "styled-media-query"
 
 export const PostItemLink = styled(AniLink)`
   color: #8899a6;
@@ -25,10 +26,15 @@ export const PostItemCategory = styled.p`
 `
 
 export const PostItemTitle = styled.h1`
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color:var(--text);
   margin-bottom: 1rem;
+
+  ${media.greaterThan('large')`
+    font-size: 2rem;
+  `}
+
 `
 
 export const PostItemDescription = styled.p`

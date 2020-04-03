@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog`,
+    title: `MQ`,
     position: `Front-end`,
     description: `Front-end`,
     author: `Matheus Quintaes`,

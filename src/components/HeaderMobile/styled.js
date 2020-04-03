@@ -6,7 +6,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 export const Header = styled.header`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     width:100%;
 `
 
@@ -14,14 +14,14 @@ export const LinkHome = styled(Link)`
     text-decoration: none;
     display: flex;
     align-items: center;
+    margin-right: auto;
     ${media.greaterThan('large')`
-    display:none;
-
+        display:none;
     `}
 `
 export const Title = styled.h1`
     margin:initial;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-left:1rem;
     line-height:1rem;
     ${media.greaterThan('large')`
@@ -34,8 +34,8 @@ export const MenuLink = styled(AniLink)`
     color: var(--text);
     font-size: 0.8rem;
     text-decoration: none;
-    margin-right: 2rem;
-    margin-left: auto;
+    margin-right: 1rem;
+
     ${media.greaterThan('large')`
         display:none;
     `}

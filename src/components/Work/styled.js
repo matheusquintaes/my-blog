@@ -2,7 +2,6 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-
 export const WorkHeader = styled.div`
   text-align: center;
   color: var(--text);
@@ -15,6 +14,7 @@ export const WorkTitle = styled.h1`
   margin: 0.5rem auto 1rem auto;
   font-weight: 500;
 
+  
   ${media.greaterThan('large')`
     font-size: 4rem;
   `}
@@ -31,18 +31,24 @@ export const WorkCategory = styled.h2`
   `}
 `
 
-
 export const WorkInfo = styled.div`
+
   display:flex;
+  flex-direction: column;
   margin-bottom: 2rem;
   justify-content: space-between;
 
+  ${media.greaterThan('medium')`
+    flex-direction: row;
+    font-size: 1.8rem;
+  `}
+  
   h4{
     font-size: 1.2rem;  
     margin: 0.5rem auto 1rem auto;
     font-weight: 500;
   
-    ${media.greaterThan('large')`
+    ${media.greaterThan('medium')`
       font-size: 1.8rem;
     `}
   }
@@ -53,17 +59,25 @@ export const WorkInfo = styled.div`
     font-weight: 400;
     letter-spacing: -0.04px;
     line-height: 1.5em;
+    
     ${media.greaterThan('large')`
       font-size: 1.1rem;
     `}
   }
 `
 export const WorkLongDescription = styled.div`
-  width: 70%
+
+  ${media.greaterThan('medium')`
+    width: 65%
+  `}
+
 `
 
 export const WorkProjectDetails = styled.div`
-  width: 20%
+ 
+  ${media.greaterThan('medium')`
+    width: 25%
+  `}
 
 `
 export const WorkContent = styled.div`
@@ -79,7 +93,7 @@ export const WorkLink = styled.div`
 `
 
 export const WorkContact = styled.div`
-  margin-top: 2rem;
+  margin: 2rem;
   text-align: center;
 
   p{
@@ -94,4 +108,10 @@ export const WorkItemLink = styled(AniLink)`
   cursor: pointer;
   font-size: 1rem;
   text-decoration: none;
+  transition: all .3s;
+  &:hover {
+    color: var(--background);
+    background: var(--text);
+    box-shadow: 0 1.125rem 2.5rem 0 rgba(4,0,21,.2);
+  }
 `

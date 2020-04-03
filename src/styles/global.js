@@ -108,7 +108,6 @@ const GlobalStyles = createGlobalStyle`
     --highlight: #0001FF;
     --sideBarBackgorund: #F5F5F5;
     --background: #fff;
-
   }
  
 
