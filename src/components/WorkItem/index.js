@@ -19,9 +19,8 @@ const WorkItem = ({
       activeClassName="active" to={`works/${slug}`}>
     <S.WorkItemWrapper>
       <S.WorkItemImage src={thumbnail}></S.WorkItemImage>
-      <S.WorkItemCategory>{category}</S.WorkItemCategory>
       <S.WorkItemTitle>{title}</S.WorkItemTitle>
-      <S.WorkItemDescription>{description}</S.WorkItemDescription>
+      <S.WorkItemCategory>{category}</S.WorkItemCategory>
     </S.WorkItemWrapper>
   </S.WorkItemLink>
 )

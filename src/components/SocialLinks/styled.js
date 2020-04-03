@@ -9,15 +9,14 @@ export const SocialLinksList = styled.ul`
   align-items: center;
   display: flex;
   justify-content: space-around;
-
 `
 
 export const SocialLinksItem = styled.li`  
-list-style: none;
+  list-style: none;
 `
 
 export const SocialLinksLink = styled.a`
-  color: #8899a6;
+  color: var(--textSecondColor);
   text-decoration: none;
   transition: color 0.5s;
   &:hover {

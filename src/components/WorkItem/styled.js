@@ -3,14 +3,10 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 
 export const WorkItemLink = styled(AniLink)`
-  width: 33.33%;
+  width: 50%;
   padding: 0 3em 0 0;
   margin: 0 0 5rem;
   text-decoration: none;
-
-  ${media.lessThan('large')`
-    width: 50%;
-  `}
 
   ${media.lessThan('medium')`
     width: 100%;
@@ -22,33 +18,28 @@ export const WorkItemWrapper = styled.div`
 `
 
 export const WorkItemImage = styled.img`
+  transition: all .3s;
 
-`
-
-export const WorkItemCategory = styled.p`
-  color: var(--highlight);
-  font-size: 0.8rem;
-  margin: 0.8rem 0;
-  font-weight: 100;
+  &:hover{
+    transform: scale(1.03);
+    box-shadow: 0 1.125rem 2.5rem 0 rgba(4,0,21,.2);
+  }
 `
 
 export const WorkItemTitle = styled.h3`
   font-size: 2rem;
   font-weight: 500;
   color: var(--text);
-  margin-bottom: 1rem;
+  margin: 1.5rem 0 0.5rem 0;
 `
 
-export const WorkItemDescription = styled.p`
-  font-size: 1rem;
+
+export const WorkItemCategory = styled.p`
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2;
   color: var(--textSecondColor);
   margin-bottom: 0.6rem;
 `
-
-
-
-
 
 

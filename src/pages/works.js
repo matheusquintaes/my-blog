@@ -7,7 +7,7 @@ import WorkList from "../components/WorkList"
 
 const WorksPage = (props) => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="Works" />
     <WorkList works={props} />
   </Layout>
 )

@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 
 export const WorkHeader = styled.div`
   text-align: center;
@@ -47,25 +49,49 @@ export const WorkInfo = styled.div`
 
   p {
     color: var(--textSecondColor);
-    ${media.greaterThan('large')`
-      font-size: 1.1rem;
-    `}
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: -0.04px;
     line-height: 1.5em;
+    ${media.greaterThan('large')`
+      font-size: 1.1rem;
+    `}
   }
 `
 export const WorkLongDescription = styled.div`
-  width: 60%
+  width: 70%
 `
 
 export const WorkProjectDetails = styled.div`
+  width: 20%
 
 `
 export const WorkContent = styled.div`
  
 `
+export const WorkFooter = styled.div`
+  display:flex;
+  flex-direction: column;
+`
 
+export const WorkLink = styled.div`
+  margin-bottom: 2rem;
+`
 
+export const WorkContact = styled.div`
+  margin-top: 2rem;
+  text-align: center;
 
+  p{
+    margin-bottom: 2rem;
+  }
+`
+
+export const WorkItemLink = styled(AniLink)`
+  border: 1px solid var(--text);
+  color: var(--text);
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+`

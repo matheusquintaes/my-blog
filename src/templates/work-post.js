@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
+import getThemeColor from "../utils/getThemeColor"
+
 import * as S from "../components/Work/styled"
 
 const WorkPost = ( {data }) => {
@@ -25,19 +27,38 @@ const WorkPost = ( {data }) => {
       <S.WorkInfo>
         <S.WorkLongDescription>
           <h4>About this project</h4>
-          <p>{ work.frontmatter.longDescription }</p>
+          <p dangerouslySetInnerHTML={{ __html: work.frontmatter.description }}></p>
         </S.WorkLongDescription>
         <S.WorkProjectDetails>
           <h4>Project Details</h4>
           <p>{ work.frontmatter.date } </p>
-          <h4>Link</h4>
-          <a>Launch Project</a>
+          <h4>Technologies</h4>
+          <p>{ work.frontmatter.technologies } </p>
         </S.WorkProjectDetails>
       </S.WorkInfo>
       <S.WorkContent>
         <div dangerouslySetInnerHTML={{ __html: work.html }}></div>
       </S.WorkContent>
 
+      <S.WorkFooter>
+        { work.frontmatter.link  && (
+        <>
+          <S.WorkLink>
+            <a href={work.frontmatter.link} target="blank">Launch Project</a>
+          </S.WorkLink> 
+        </>
+        )}
+        <S.WorkContact>
+          <p>Ready to Get Started?</p>
+          <S.WorkItemLink cover
+            direction="left"
+            bg={getThemeColor()}
+            duration={0.6}
+            activeClassName="active" to="/about">
+            LET'S TALK
+        </S.WorkItemLink>
+        </S.WorkContact>
+      </S.WorkFooter>
     </Layout>
   )
 }
@@ -51,13 +72,13 @@ export const query = graphql`
       frontmatter {
         title
         description
-        longDescription
-        date(formatString: "MMMM D, YYYY") 
+        date(formatString: "MMMM, YYYY") 
         thumbnail
         category
+        technologies
+        link
       }
       html
-      timeToRead
     }
   }
 `
