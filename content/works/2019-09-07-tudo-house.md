@@ -1,8 +1,8 @@
 ---
 title: Tudo House
 description: >-
-  A Tudo House nasceu da expertise adquirida com a Tudogás em mais de 20 anos, a partir do crescimento da área de banho e cozinha no conceito de morar bem e com mais estilo.<br>
-  Tudo House approached me for a eccommerce re-design in order to align their digital presence.
+ Tudo House was created from the expertise acquired with Tudogás in more than 20 years, from the growth of the bathroom and kitchen area in the concept of living well and with more style.<br>
+ Tudo House approached me for a eccommerce re-design in order to align their digital presence.
 
 date: '2018-01-01 08:07:25'
 thumbnail: /assets/img/th-2.jpg
