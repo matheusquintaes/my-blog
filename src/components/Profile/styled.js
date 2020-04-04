@@ -22,7 +22,7 @@ export const Description = styled.p`
 
 export const Dot = styled.span`
     color: var(--highlight);
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 1px;
     margin-left: -6px;
 `

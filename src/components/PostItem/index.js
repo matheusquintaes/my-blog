@@ -20,11 +20,9 @@ const PostItem = ({
       activeClassName="active" to={slug}>
     <S.PostItemWrapper>
       <S.PostItemCategory>{category}</S.PostItemCategory>
+      {/* <S.PostItemDate> {date} • {timeToRead} min read </S.PostItemDate> */}
       <S.PostItemTitle>{title}</S.PostItemTitle>
       <S.PostItemDescription>{description}</S.PostItemDescription>
-      <S.PostItemDate>
-        {date} • {timeToRead} min read
-      </S.PostItemDate>
   
     </S.PostItemWrapper>
   </S.PostItemLink>

@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -61,7 +62,7 @@ const GlobalStyles = createGlobalStyle`
     background: var(--background);
     line-height: 1;
     font-size: 100%;
-    font-family: -apple-system, 
+    font-family: "Inter UI", -apple-system, 
       BlinkMacSystemFont, 
       "Segoe UI", 
       Roboto, 
@@ -103,10 +104,10 @@ const GlobalStyles = createGlobalStyle`
   
   
   body.light {
-    --text: #343434;
-    --textSecondColor: #545454;
-    --highlight: #0001FF;
-    --sideBarBackgorund: #F5F5F5;
+    --text: #282c47;
+    --textSecondColor: #5b617c;
+    --highlight: #0064fe;
+    --sideBarBackgorund: #f4f4f6;
     --background: #fff;
   }
  

@@ -29,13 +29,10 @@ export const WorkItemImage = styled.img`
 
 export const WorkItemTitle = styled.h3`
   font-size: 1.6rem;
-
-  ${media.greaterThan('large')`
-    font-size: 2rem;
-  `}
-
   font-weight: 500;
-  color: var(--text);
+  color:var(--text);
+  line-height: 34px;
+  letter-spacing: -0.014em;
   margin: 1.5rem 0 0.5rem 0;
 `
 
