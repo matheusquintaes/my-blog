@@ -3,10 +3,9 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import media from "styled-media-query"
 
 export const PostItemLink = styled(AniLink)`
-  color: #8899a6;
   display: flex;
   text-decoration: none;
-  margin-bottom:4rem;
+  margin-bottom:3rem;
   :hover h1{
     color: var(--highlight);
   }

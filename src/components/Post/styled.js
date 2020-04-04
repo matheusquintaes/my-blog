@@ -17,11 +17,12 @@ export const PostTitle = styled.h1`
   font-size: 1.6rem;  
   margin: 0.5rem auto 1rem auto;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 2rem;
   letter-spacing: -0.017em;
 
   ${media.greaterThan('large')`
     font-size: 2.4rem;
+    line-height: 3rem;
   `}
 `
 
@@ -36,7 +37,7 @@ export const PostDescription = styled.h2`
 `
 
 export const PostDate = styled.p`
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 100;
   color: var(--textSecondColor);
 `
@@ -46,7 +47,7 @@ export const MainContent = styled.section`
   ${media.greaterThan('large')`
     margin: auto;
     max-width: 44rem;
-    padding: 0px 5rem 0px 0px;
+    padding: 0 5rem 0 0;
   `}
   p,
   h1,
@@ -62,9 +63,10 @@ export const MainContent = styled.section`
     ${media.greaterThan('large')`
       font-size: 1.1rem;
     `}
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
     font-weight: 400;
-    line-height: 32px;
+   
     letter-spacing: -0.008em;
   }
   p {

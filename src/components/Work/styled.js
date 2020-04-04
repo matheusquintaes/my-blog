@@ -55,9 +55,9 @@ export const WorkInfo = styled.div`
 
   p {
     color: var(--textSecondColor);
-    font-size: 0.9rem;
     font-weight: 400;
-    line-height: 32px;
+    font-size: 1rem;
+    line-height: 1.8rem;
     letter-spacing: -0.008em;
     
     ${media.greaterThan('large')`
