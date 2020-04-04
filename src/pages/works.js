@@ -14,7 +14,10 @@ const WorksPage = (props) => (
 
 export const query = graphql`
   query WorkList {
-    allMarkdownRemark(filter: {fields: {collection: {eq: "works"}}}) {
+    allMarkdownRemark(
+      filter: {fields: {collection: {eq: "works"}}}
+      sort: { fields: frontmatter___date, order: DESC }
+      ) {
       edges {
         node {
           id
