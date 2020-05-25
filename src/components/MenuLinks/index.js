@@ -17,7 +17,9 @@ const MenuLinks = () => (
             bg={getThemeColor()}
             duration={0.6}
             to={link.url}
-            activeClassName="active">
+            activeClassName="active"
+            target="_blank"
+            >
             {link.label}
           </S.MenuLinksLink>
         </S.MenuLinksItem>
