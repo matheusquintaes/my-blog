@@ -16,7 +16,6 @@ const WorkPost = ( {data }) => {
      <SEO
         title={work.frontmatter.title}
         description={work.frontmatter.description}
-        thumbnail={work.frontmatter.thumbnail}
       />
       <S.WorkHeader>
        <S.WorkTitle>{ work.frontmatter.title }</S.WorkTitle>
@@ -72,7 +71,6 @@ export const query = graphql`
         title
         description
         date(formatString: "MMMM, YYYY") 
-        thumbnail
         category
         technologies
         link
