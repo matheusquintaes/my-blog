@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import SocialLinks from "../components/SocialLinks"
+import Profile from "../components/Profile"
 
 
 import * as S from "../components/Post/styled"
@@ -11,6 +12,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <S.MainContent>
+      <Profile />
       <h1>About</h1>
 
       <p>Front-end UX/UI developer with 5 years experience in web developing focusing in usability, semantics, accessibility and clean code.</p>

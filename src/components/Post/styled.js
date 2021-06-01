@@ -7,7 +7,7 @@ export const PostHeader = styled.header`
 
   ${media.greaterThan('large')`
     margin: auto;
-    max-width: 44rem;
+    max-width: 34rem;
     padding: 0px 5rem 0px 0px;
   `}
   margin: auto;
@@ -46,7 +46,7 @@ export const MainContent = styled.section`
   
   ${media.greaterThan('large')`
     margin: auto;
-    max-width: 44rem;
+    max-width: 32rem;
     padding: 0 5rem 0 0;
   `}
   p,
@@ -83,7 +83,7 @@ export const MainContent = styled.section`
   ul,
   ol {
     list-style: disc;
-    padding-left: 2.5rem;
+    //padding-left: 2.5rem;
     margin: 0 auto 1.6rem;
   }
   li {
@@ -195,7 +195,7 @@ export const MainContent = styled.section`
   }
   a {
     color: var(--text);
-    text-decoration: underline;
+    //text-decoration: underline;
     transition: opacity 0.5s;
     svg {
       color: var(--text);

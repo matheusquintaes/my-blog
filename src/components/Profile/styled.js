@@ -2,7 +2,7 @@ import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const ProfileWrapper = styled.section`
-    margin: 4rem 0;
+    margin: 1rem 0;
 `
 export const Title = styled(AniLink)`
     font-family: 'Prompt', sans-serif;

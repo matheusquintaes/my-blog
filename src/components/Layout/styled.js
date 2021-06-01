@@ -17,12 +17,11 @@ export const LayoutWrapper = styled.section`
 export const LayoutMain = styled.main`
   background: var(--background);
   width: 100%;
-  padding-top: 5rem;
   
   ${media.greaterThan('large')`
     min-height: 100vh;
     width: 100%;
-    padding: 3.75rem 3rem 3rem 29rem;
+    //padding: 3.75rem 3rem 3rem 29rem;
       `}
 `
 
