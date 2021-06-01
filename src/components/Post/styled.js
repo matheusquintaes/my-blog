@@ -47,7 +47,7 @@ export const MainContent = styled.section`
   ${media.greaterThan('large')`
     margin: auto;
     max-width: 32rem;
-    padding: 0 5rem 0 0;
+    padding: 2rem 5rem 0  0;
   `}
   p,
   h1,
